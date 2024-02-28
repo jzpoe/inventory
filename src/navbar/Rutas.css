@@ -1,0 +1,36 @@
+
+
+.navbar {
+    
+
+    padding: 10px 0;
+    width: 100%;
+    height: 5vh;
+    
+  }
+  
+  .navbar-list {  
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around; /* Distribuye los elementos horizontalmente */
+  }
+  
+  .navbar-item {
+    margin: 0;
+  }
+  
+  .navbar-link {
+    text-decoration: none;
+    color: white;/* Cambia el color del texto según tu preferencia */
+    font-weight: bold;
+    transition: color 0.3s;
+    font-size: 3vh;
+  }
+  
+  .navbar-link:hover {
+    color: #007bff; /* Cambia el color al pasar el mouse por encima */
+  }
+
+  

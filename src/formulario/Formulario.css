@@ -1,0 +1,147 @@
+/* Estilo para el formulario */
+form {
+  max-width: 800px;
+  margin: 150px auto 0; /* Agrega margen en la parte superior */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+  
+  /* Estilo para los elementos en la primera columna */
+  .form-column-1 {
+    grid-column: 1;
+  }
+  
+  /* Estilo para los elementos en la segunda columna */
+  .form-column-2 {
+    grid-column: 2;
+  }
+  
+  /* Estilo para las etiquetas de los campos */
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  /* Estilo para los campos de entrada */
+  input[type="text"],
+  input[type="num"] 
+  input[type="checkbox"]
+  input[type="date"]{
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Estilo para los mensajes de error */
+  .errors-message {
+    color: red;
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+  }
+  
+  
+
+  
+  
+
+  .form-registro{
+    color: rgb(65, 76, 240);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+
+
+ 
+
+  .bn5 {
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+  }
+  
+  .bn5:before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowingbn5 20s linear infinite;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  @keyframes glowingbn5 {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  .bn5:active {
+    color: #000;
+  }
+  
+  .bn5:active:after {
+    background: transparent;
+  }
+  
+  .bn5:hover:before {
+    opacity: 1;
+  }
+  
+  .bn5:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #191919;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+
+  .buttonSalir {
+    background-color: red;
+    color: #fff;
+    border: 10px;
+    padding: 8px 12px;
+    margin-bottom: 10px; /* Espacio entre el botón "Salir" y el formulario */
+    cursor: pointer;
+  }

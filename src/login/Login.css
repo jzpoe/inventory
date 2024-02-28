@@ -1,0 +1,136 @@
+.form-container {
+    max-width: 400px;
+    margin: 150px auto; /* Centro verticalmente */
+    padding: 20px;
+    
+    border-radius: 5px;
+    text-align: center; /* Centra el texto en el centro horizontalmente */
+
+    /* border: 1px solid #ccc; */
+  }
+  
+  .form-container h2 {
+    font-weight: bold;
+    margin-bottom: 20px; /* Espacio adicional entre el título y los campos */
+  }
+  
+  .form-container label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left; /* Alinea el texto del label a la izquierda */
+  }
+  
+  .form-container input[type="email"],
+  .form-container input[type="password"] {
+    
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  
+  .bn5 {
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+  }
+  
+  .bn5:before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowingbn5 20s linear infinite;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  @keyframes glowingbn5 {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  .bn5:active {
+    color: #000;
+  }
+  
+  .bn5:active:after {
+    background: transparent;
+  }
+  
+  .bn5:hover:before {
+    opacity: 1;
+  }
+  
+  .bn5:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #191919;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+
+ 
+  @media screen and (max-width: 600px) {
+    /* Define los estilos para pantallas con un ancho máximo de 600px (ajusta este valor según sea necesario) */
+    .form-container {
+      max-width: 80%; /* Cambia el ancho máximo según tus necesidades */
+      margin: 20px auto; /* Cambia el margen según tus necesidades */
+    }
+  
+    .form-container h2 {
+      font-size: 24px; /* Ajusta el tamaño de fuente del título según tus necesidades */
+    }
+
+    .bn5 {
+      font-size: 13px; /* Ajusta el tamaño de fuente del botón según tus necesidades */
+      letter-spacing: 1px; /* Ajusta el espaciado entre letras según tus necesidades */
+    }
+    .form-registro{
+      font-size: 13px;
+      margin-top: 13px;
+    }
+  
+  }
+
+  .h2{
+    border-radius:74% 26% 65% 35% / 73% 69% 31% 27% ;
+  }

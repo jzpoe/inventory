@@ -1,0 +1,45 @@
+.generatePDF, .btnBasura, .calculateButton {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  margin: 4px;
+  cursor: pointer;
+}
+
+/* Alineación horizontal de los campos de fecha */
+.date-inputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-group {
+  margin-right: 10px;
+}
+
+/* Margen entre filas en las tablas */
+.responsive-table tbody tr {
+  margin-bottom: 10px;
+}
+
+/* Bordes y sombra en las tablas */
+.responsive-table {
+  border-collapse: collapse;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.responsive-table th, .responsive-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+/* Estilo para los encabezados de las tablas */
+.responsive-table th {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Cambio de cursor en los checkboxes */
+input[type="checkbox"] {
+  cursor: pointer;
+}
