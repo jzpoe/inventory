@@ -1,4 +1,4 @@
-import "./Home.css";
+import './Home.css'
 import jsPDF from "jspdf";
 import "jspdf-autotable";
 import { useEffect, useState } from "react";
